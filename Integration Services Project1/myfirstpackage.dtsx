@@ -514,6 +514,7 @@
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{C0C5ABBF-F1D0-4328-B629-BF2A4EC6EA64}"
+
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task 1"
@@ -594,6 +595,7 @@
         <NodeLayout
           Size="173.6,41.6"
           Id="Package\Execute SQL Task 1"
+
           TopLeft="409.999977598589,136.066665720476" />
       </GraphLayout>
     </LayoutInfo>
