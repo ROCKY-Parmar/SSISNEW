@@ -11,8 +11,13 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="myfirstpackage"
   DTS:PackageType="5"
+<<<<<<< HEAD
   DTS:VersionBuild="27"
   DTS:VersionGUID="{D1158E1D-03D2-4AD6-9715-12D4F05AB38D}">
+=======
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{63289931-65E0-46EC-BD2E-47BAF91C2A45}">
+>>>>>>> parent of 3c2c8dd (firstBranch)
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +30,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ASUS\Downloads\New Microsoft Excel Worksheet.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ASUS\Downloads\New Microsoft Excel Worksheet.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -37,7 +42,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\ASUS\Downloads\ssisdata.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\ASUS\Downloads\ssisdata.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -49,7 +54,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ASUS\Downloads\ssisdata.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ASUS\Downloads\ssisdata.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -509,6 +514,7 @@
           SQLTask:SqlStatementSource="Select * from EMP" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
+<<<<<<< HEAD
     <DTS:Executable
       DTS:refId="Package\Execute SQL Task 1"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
@@ -527,6 +533,8 @@
           SQLTask:SqlStatementSource="select * from users" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
+=======
+>>>>>>> parent of 3c2c8dd (firstBranch)
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -592,11 +600,14 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+<<<<<<< HEAD
         <NodeLayout
           Size="173.6,41.6"
           Id="Package\Execute SQL Task 1"
 
           TopLeft="409.999977598589,136.066665720476" />
+=======
+>>>>>>> parent of 3c2c8dd (firstBranch)
       </GraphLayout>
     </LayoutInfo>
   </Package>
