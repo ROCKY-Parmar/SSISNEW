@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="4/8/2024 11:33:56 PM"
@@ -11,9 +11,107 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionGUID="{41D3544B-F0E6-4E6E-856B-784C491F5FFB}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{7989D925-164A-447A-A898-97BA0EF7BEA1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-3H8JD1IH.ICICI]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7A23A75D-670C-465F-B639-BAE7DB5C1572}"
+      DTS:ObjectName="LAPTOP-3H8JD1IH.ICICI">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Package::LAPTOP3H8JD1IHICICI_ConnectionString]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Password">@[$Package::LAPTOP3H8JD1IHICICI_Password]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-3H8JD1IH;Initial Catalog=ICICI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{7A23A75D-670C-465F-B639-BAE7DB5C1572}LAPTOP-3H8JD1IH.ICICI;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAADaGnZKw7q0SvuzISi9WgZgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADxPO0/jT5cWiCIOjRMtT7ItrAT8sf2DGBmAcXJXK3wogAAAAAOgAAAAAIAACAAAAC7bV1O9ghjmwMx5IVuae+XQM9WisuN82NcFxpm/yOYpRAAAACH/Bd9HCCTiMFda01WTtipQAAAAL/GM5xnLR6jOFmjx1iLq1a/T+mT/rxDA+SXlJsMDUWv/OH1bkIxms5wfo9CGW0nBigz4tNmdiwVyxFOUbfQ9oo</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-3H8JD1IH1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5E31D413-7C27-4F70-8C69-589E5EABCD61}"
+      DTS:ObjectName="LAPTOP-3H8JD1IH1">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::cs1]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-3H8JD1IH;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{5E31D413-7C27-4F70-8C69-589E5EABCD61}LAPTOP-3H8JD1IH1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-3H8JD1IH1 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CFA38FFF-EB4E-47A7-9A17-ABB2B755EC26}"
+      DTS:ObjectName="LAPTOP-3H8JD1IH1 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-3H8JD1IH;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{CFA38FFF-EB4E-47A7-9A17-ABB2B755EC26}LAPTOP-3H8JD1IH1 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.ICICI]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B49B2A3D-BFA9-46C3-B159-C5C56E41698B}"
+      DTS:ObjectName="localhost.ICICI">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::LAPTOP3H8JD1IH1_ConnectionString]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-3H8JD1IH;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{5E31D413-7C27-4F70-8C69-589E5EABCD61}LAPTOP-3H8JD1IH1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{DA007218-35A7-4657-BCC6-38E47F2C3BB8}"
+      DTS:ObjectName="LAPTOP3H8JD1IHICICI_ConnectionString">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">Data Source=LAPTOP-3H8JD1IH;Initial Catalog=ICICI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{7A23A75D-670C-465F-B639-BAE7DB5C1572}LAPTOP-3H8JD1IH.ICICI;Auto Translate=False;</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{88354504-C4C9-4972-9DD5-904F5C633C5D}"
+      DTS:ObjectName="LAPTOP3H8JD1IHICICI_Password"
+      DTS:Required="True"
+      DTS:Sensitive="True">
+      <DTS:Property
+        DTS:Name="ParameterValue">
+        <DTS:Property
+          DTS:DataType="8"
+          DTS:Name="ParameterValue"
+          Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAADaGnZKw7q0SvuzISi9WgZgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADWqzQVxn4omdv0EyYX8LEzRiVOgmbQHiZoAlDemE1Z5QAAAAAOgAAAAAIAACAAAACJPTkCi+2GhCiFHv0eb2WAmAr93gaBCUYqk24wm1ye7hAAAAADs85CcLXkcnXPn+VaGr6UQAAAACIqfgN8nxBWMkCfF+HK0zicqUePBB4r4Ve5Lnotti7fxSqDmXUihAl4n3uBVYnb2pOh8jmGPOJhm2IqZ90Mb7E</DTS:Property>
+      </DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
   <DTS:Variables />
   <DTS:Executables />
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+</Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

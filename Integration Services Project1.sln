@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "Integration Services Project1", "Integration Services Project1\Integration Services Project1.dtproj", "{A2AC4A8E-925B-40BB-8F6A-1933F75E1A91}"
 EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "Integration Services Project2", "Integration Services Project2\Integration Services Project2.dtproj", "{CE96DE3C-C578-403D-8D3C-07EA1B1876DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -12,6 +14,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A2AC4A8E-925B-40BB-8F6A-1933F75E1A91}.Development|Default.ActiveCfg = Development
 		{A2AC4A8E-925B-40BB-8F6A-1933F75E1A91}.Development|Default.Build.0 = Development
+		{CE96DE3C-C578-403D-8D3C-07EA1B1876DE}.Development|Default.ActiveCfg = Development
+		{CE96DE3C-C578-403D-8D3C-07EA1B1876DE}.Development|Default.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
